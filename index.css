@@ -1,0 +1,115 @@
+.flex-container{
+    display: flex;
+    background-color: dodgerblue;
+            }
+            .flex-container > div{
+                background-color: blue;
+                margin: 10px;
+                padding: 20px;
+                font-size: 30px;
+            }
+
+.round{
+    margin-top: 50px;
+    border-radius: 25px;
+    background-color: aqua;
+    padding: 25px;
+    height: 50px;
+    width: 100px;
+}
+
+.border-image{
+    border: 10px solid transparent;
+    padding:15px;
+    /* here we are slicing the border image using 30 40 and 50  */
+    /* border-image: url('./pngtree-border-black-simple-and-minimalist-png-image_5329505.png') 50% round; */
+    /* border-image: url('./pngtree-border-black-simple-and-minimalist-png-image_5329505.png') 20% round; */
+    border-image: url('./pngtree-border-black-simple-and-minimalist-png-image_5329505.png') 30% round;
+
+}
+.multiple-backgrounds{
+    background-image: url('./flwer.jpeg'),url('./trees.jpeg');
+    background-position: right bottom,left top;
+    background-repeat: no-repeat,repeat;
+
+    /* we can do the same thing as above using shorthand property */
+    /* background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat; */
+}
+.colors{
+    background-color: rgba(255, 0, 0, 1);
+    padding:5px;
+
+}
+.op-color1{
+    background-color: rgba(255, 0, 0, 0.5);
+    padding:5px;
+}
+.op-color2{
+    background-color: rgba(255, 0, 0, 0.3);
+    padding:5px;
+}
+.rgb-opacity{
+    background-color: rgb(255, 0, 0); opacity: 1;
+    padding: 10px;
+}
+#linear-grad {
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    /* background-image: linear-gradient(green, yellow); */
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    padding:25px;
+  }
+
+   .radial-grad{
+    height: 200px;
+    background-image:radial-gradient(red, yellow, green);
+   }
+
+   .conic-grad{
+    height: 200px;
+    background-image: conic-gradient(yellow,red, green,blue)
+   }
+
+   .text-shadow{
+    text-shadow: 1px 1px;
+   }
+
+   .box-shadow{
+    height: 300px;
+    width: 100px;
+    padding:15px;
+    background-color: aqua;
+    box-shadow: 10px 10px red;
+   }
+   .text-overflow{
+    white-space: nowrap;
+    width: 200px;
+    border: 1px solid #0000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding:10px
+   }
+   /* word wrap */
+.word-wrap
+   {
+   width: 11em; 
+   border: 1px solid #000000;
+   word-wrap: break-word;
+ }
+
+
+/* 2d transform rotate() */
+
+.normal {
+    width: 80px;
+    height: 80px;
+    background-color: skyblue;
+  }
+  
+  .rotated {
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg); /* Equal to rotateZ(45deg) */
+    background-color: pink;
+  }
+
