@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool tip</title>
+    <style>
+        .tool-tip{
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+      .tool-tip  .tool-tip-text{
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: white;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+        }
+
+        .tool-tip:hover .tool-tip-text{
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <div class="tool-tip">hover over me
+        <span class="tool-tip-text">tool tip text</span>
+    </div>
+</body>
+</html>
